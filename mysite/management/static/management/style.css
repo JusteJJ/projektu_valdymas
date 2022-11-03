@@ -1,0 +1,10 @@
+body{
+    background:#deeff5;
+    color:black;
+}
+.navbar{
+  width: 100%;
+  background-color: #555;
+  display: block;
+  overflow: auto;
+}

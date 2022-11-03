@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Pagrindinis puslapis{% endblock %}
+
+{% block content %}
+<div class="jumbotron bg-info">
+<h1> Mes išpildome didžiausius statybų projektus Lietuvoje</h1>
+<h4>Šiuo metu vykdomi projektai:</h4>
+<p>{% for projektas in vykdomi_projektai %}</p>
+    <li><a href="{% url 'projektas' %}">{{ projektas }}</a></li>
+{% endfor %}
+</div>
+{% endblock %}

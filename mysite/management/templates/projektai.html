@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Projektai{% endblock %}
+
+{% block content %}
+<div class="jumbotron bg-#424242">
+<h1> Projektai</h1>
+<ul>
+<li>Projektas: {{ Projektas.pavadinimas }} {{ Projektas.pradziosdata }} - {{ Projektas.pabaigosdata }}. Projekto vadovas: {{ Projektas.vadovas }}</li>
+<li>Klientas: {{ object.klientas }}</li>
+<li>Darbuotojai: {{ darbuotojas.darbuotojai }}</li>
+<li>Atliekamas darbas: {{ darbas.darbai }}</li>
+<li>Saskaita už atliktą darbą: {{ saskaita.saskaitos }} €</li>
+</ul>
+{% endblock %}
